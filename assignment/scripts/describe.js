@@ -26,10 +26,11 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// The number variable is established as 1
+// number++ adds 1 to the variable -- increment operator (need help parsing what it means when the ++ is before the operand vs. after)
+// Specifying that if the variable is 2 or greater then the console log prints yes
+// Which it would do if ++ adds 1 to the variable as we understand.
+// We console log 'yes'
 
 //CODE
 /*
@@ -45,10 +46,10 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// The variable (name) is defined as being Dane 
+// The code is asking if the variable (name) is Mary, then console log "Hi, Mary!" and otherwise "How do you do?"
+// Because the variable is defined as Dane but requires Mary to console log, "Hi, Mary!", 
+// We console log "How do you do?"
 
 //CODE
 /*
@@ -70,10 +71,10 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// There's no string, number, or boolean for secret; secret will be defined by the rest of the code.  This is a placeholder and the variable will be defined later.
+// The code variable is defined as 123.  Therefore the value is reset as 246 (multiplied by 2) and secret is defined as "super"
+// Redefined code = 246; code < 250; secret is not redefined as "duper"
+// We console log "super"
 
 //CODE
 /*
@@ -139,6 +140,10 @@ if (mix === true) {
 }
 */
 
+// Description says that we reset colorOne and colorTwo; original only reset colorOne so we added colorTwo.
+// Correction: add
+colorTwo = 'purple'
+
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
@@ -151,6 +156,11 @@ if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
 */
+
+// Time is listed as a constant (const) and should instead be let.  The pipes mean or (||), so the time variable being constant as 4 will always trigger the console log and there is no true variable here.
+// Correction: 
+let time = 4;
+
 
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge 
@@ -167,3 +177,10 @@ if(minAge <= age) {
 }
 */
 
+// "No entry" and "Enter" should be swapped in the if/then statement.  As is, someone who is 22 would be denied entry and someone who is 20 would be told to enter.
+// Correction: 
+if(minAge <= age) {
+  console.log('enter');
+} else {
+  console.log('no entry');
+}
